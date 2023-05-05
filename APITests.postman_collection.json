@@ -155,33 +155,6 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Content-Type is present\", function () {\r",
-							"    pm.response.to.have.header(\"Teste para falhar\");\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{url}}",
-					"host": [
-						"{{url}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Verifica Cabeçalho",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Content-Type is present\", function () {\r",
 							"    pm.response.to.have.header(\"Connection\");\r",
 							"});"
 						],
